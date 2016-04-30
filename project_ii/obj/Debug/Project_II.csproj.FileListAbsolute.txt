@@ -145,3 +145,15 @@ M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.Properties.Resources.resources
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.exe.config
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.exe
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.pdb
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.exe
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.pdb
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.FormAddTask.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Home.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Login.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
