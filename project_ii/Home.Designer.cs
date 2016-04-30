@@ -129,6 +129,7 @@
             // 
             this.listViewToday.Activation = System.Windows.Forms.ItemActivation.OneClick;
             this.listViewToday.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listViewToday.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewToday.HideSelection = false;
             this.listViewToday.Location = new System.Drawing.Point(23, 79);
             this.listViewToday.MultiSelect = false;
@@ -305,6 +306,7 @@
             // 
             // p_profile
             // 
+            this.p_profile.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.p_profile.BackColor = System.Drawing.SystemColors.Control;
             this.p_profile.Controls.Add(this.label1);
             this.p_profile.Controls.Add(this.linkLabel1);
@@ -315,10 +317,9 @@
             this.p_profile.Controls.Add(this.l_profile_email);
             this.p_profile.Controls.Add(this.tB_profile_pass);
             this.p_profile.Controls.Add(this.l_profile_user);
-            this.p_profile.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.p_profile.Location = new System.Drawing.Point(0, 0);
+            this.p_profile.Location = new System.Drawing.Point(281, 0);
             this.p_profile.Name = "p_profile";
-            this.p_profile.Size = new System.Drawing.Size(906, 583);
+            this.p_profile.Size = new System.Drawing.Size(625, 583);
             this.p_profile.TabIndex = 26;
             this.p_profile.Visible = false;
             // 
@@ -328,7 +329,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(441, 439);
+            this.label1.Location = new System.Drawing.Point(300, 439);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(126, 20);
@@ -342,7 +343,7 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkColor = System.Drawing.Color.DodgerBlue;
-            this.linkLabel1.Location = new System.Drawing.Point(571, 439);
+            this.linkLabel1.Location = new System.Drawing.Point(430, 439);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(64, 20);
@@ -353,15 +354,14 @@
             // 
             // b_back
             // 
-            this.b_back.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.b_back.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.b_back.BackgroundImage = global::Project_II.Properties.Resources.back_button;
             this.b_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.b_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_back.ForeColor = System.Drawing.SystemColors.Control;
-            this.b_back.Location = new System.Drawing.Point(218, 120);
+            this.b_back.Location = new System.Drawing.Point(80, 86);
             this.b_back.Name = "b_back";
-            this.b_back.Size = new System.Drawing.Size(24, 28);
+            this.b_back.Size = new System.Drawing.Size(22, 28);
             this.b_back.TabIndex = 25;
             this.b_back.UseVisualStyleBackColor = true;
             this.b_back.Click += new System.EventHandler(this.b_back_Click);
@@ -372,7 +372,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft New Tai Lue", 15.75F);
-            this.label3.Location = new System.Drawing.Point(276, 125);
+            this.label3.Location = new System.Drawing.Point(138, 86);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 27);
             this.label3.TabIndex = 24;
@@ -386,7 +386,7 @@
             this.b_profile_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_profile_update.Font = new System.Drawing.Font("Microsoft New Tai Lue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b_profile_update.ForeColor = System.Drawing.SystemColors.Window;
-            this.b_profile_update.Location = new System.Drawing.Point(285, 369);
+            this.b_profile_update.Location = new System.Drawing.Point(144, 369);
             this.b_profile_update.Margin = new System.Windows.Forms.Padding(2);
             this.b_profile_update.Name = "b_profile_update";
             this.b_profile_update.Size = new System.Drawing.Size(349, 40);
@@ -403,7 +403,7 @@
             this.tB_profile_pass2.BackColor = System.Drawing.SystemColors.Window;
             this.tB_profile_pass2.Font = new System.Drawing.Font("Microsoft New Tai Lue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tB_profile_pass2.ForeColor = System.Drawing.Color.Gray;
-            this.tB_profile_pass2.Location = new System.Drawing.Point(285, 304);
+            this.tB_profile_pass2.Location = new System.Drawing.Point(144, 304);
             this.tB_profile_pass2.Margin = new System.Windows.Forms.Padding(2);
             this.tB_profile_pass2.MinimumSize = new System.Drawing.Size(350, 32);
             this.tB_profile_pass2.Name = "tB_profile_pass2";
@@ -419,7 +419,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.l_profile_email.AutoSize = true;
             this.l_profile_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_profile_email.Location = new System.Drawing.Point(281, 235);
+            this.l_profile_email.Location = new System.Drawing.Point(140, 223);
             this.l_profile_email.Name = "l_profile_email";
             this.l_profile_email.Size = new System.Drawing.Size(41, 16);
             this.l_profile_email.TabIndex = 19;
@@ -433,7 +433,7 @@
             this.tB_profile_pass.BackColor = System.Drawing.SystemColors.Window;
             this.tB_profile_pass.Font = new System.Drawing.Font("Microsoft New Tai Lue", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tB_profile_pass.ForeColor = System.Drawing.Color.Gray;
-            this.tB_profile_pass.Location = new System.Drawing.Point(284, 265);
+            this.tB_profile_pass.Location = new System.Drawing.Point(143, 265);
             this.tB_profile_pass.Margin = new System.Windows.Forms.Padding(2);
             this.tB_profile_pass.MinimumSize = new System.Drawing.Size(350, 32);
             this.tB_profile_pass.Name = "tB_profile_pass";
@@ -450,7 +450,7 @@
             this.l_profile_user.AutoSize = true;
             this.l_profile_user.Font = new System.Drawing.Font("Microsoft New Tai Lue", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_profile_user.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.l_profile_user.Location = new System.Drawing.Point(278, 203);
+            this.l_profile_user.Location = new System.Drawing.Point(137, 191);
             this.l_profile_user.Name = "l_profile_user";
             this.l_profile_user.Size = new System.Drawing.Size(120, 32);
             this.l_profile_user.TabIndex = 0;
