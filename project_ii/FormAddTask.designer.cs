@@ -289,11 +289,10 @@
             this.Controls.Add(this.checkTue);
             this.Controls.Add(this.checkMon);
             this.Controls.Add(this.datePicker);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Location = new System.Drawing.Point(10, 10);
             this.Name = "FormAddTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add a new task";
             this.Load += new System.EventHandler(this.FormAddTask_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -206,18 +206,22 @@
             // 
             // categories
             // 
+            this.categories.BackColor = System.Drawing.SystemColors.Control;
+            this.categories.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.categories.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categories.FormattingEnabled = true;
             this.categories.ItemHeight = 21;
             this.categories.Location = new System.Drawing.Point(16, 156);
             this.categories.Name = "categories";
-            this.categories.Size = new System.Drawing.Size(248, 130);
+            this.categories.Size = new System.Drawing.Size(248, 126);
             this.categories.TabIndex = 11;
             this.categories.SelectedIndexChanged += new System.EventHandler(this.categories_SelectedIndexChanged);
             // 
             // btnToday
             // 
+            this.btnToday.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnToday.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnToday.ForeColor = System.Drawing.SystemColors.WindowText;
             this.btnToday.Location = new System.Drawing.Point(16, 79);
             this.btnToday.Name = "btnToday";
             this.btnToday.Size = new System.Drawing.Size(248, 35);
@@ -295,7 +299,7 @@
             this.b_notes.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.b_notes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b_notes.Font = new System.Drawing.Font("Microsoft New Tai Lue", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.b_notes.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.b_notes.ForeColor = System.Drawing.SystemColors.ControlText;
             this.b_notes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.b_notes.Location = new System.Drawing.Point(16, 469);
             this.b_notes.Name = "b_notes";
