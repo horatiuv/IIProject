@@ -1,0 +1,14 @@
+Uploaded by: Miha
+
+
+DONE
+-rezolvat eroarea la click dreapta pe categorie, cand nicio categorie nu e selectata
+-implementat posibilitatea stergerii unei categorii care are taskuri
+-adaugat coloana noua pentru afisarea statusului fiecarui task (done/undone)
+-posibilitate de do/undo task (taskurile "done" se afiseaza in categorii)
+
+
+TO DO
+-folosirea prioritatilor taskurilor pentru afisare
+-includerea taskurilor recurente
+-afisarea culorilor la categorii si taskuri
