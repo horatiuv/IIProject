@@ -1,0 +1,147 @@
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\bin\Debug\Project_II.exe.config
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\bin\Debug\Project_II.exe
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\bin\Debug\Project_II.pdb
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.exe
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.pdb
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.login.resources
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.signup.resources
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.forgot.resources
+E:\University\2nd semester\Industrial Informatics\Project\Project_II\Project_II\obj\Debug\Project_II.home.resources
+H:\work\Project_II\Project_II\bin\Debug\Project_II.exe.config
+H:\work\Project_II\Project_II\obj\Debug\Project_II.exe
+H:\work\Project_II\Project_II\obj\Debug\Project_II.pdb
+H:\work\Project_II\Project_II\bin\Debug\Project_II.exe
+H:\work\Project_II\Project_II\bin\Debug\Project_II.pdb
+H:\work\Project_II\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+H:\work\Project_II\Project_II\obj\Debug\Project_II.home.resources
+H:\work\Project_II\Project_II\obj\Debug\Project_II.login.resources
+H:\work\Project_II\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+H:\work\Project_II\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+H:\work\Project_II\Project_II\bin\Debug\MySql.Data.dll
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\bin\Debug\Project_II.exe.config
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.exe
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.pdb
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\bin\Debug\Project_II.exe
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\bin\Debug\Project_II.pdb
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\bin\Debug\MySql.Data.dll
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.home.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.login.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+H:\work\Ver 1.03\Project_II\bin\Debug\Project_II.exe.config
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.exe
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.pdb
+H:\work\Ver 1.03\Project_II\bin\Debug\Project_II.exe
+H:\work\Ver 1.03\Project_II\bin\Debug\Project_II.pdb
+H:\work\Ver 1.03\Project_II\bin\Debug\MySql.Data.dll
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.home.resources
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.login.resources
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+H:\work\Ver 1.03\Project_II\obj\Debug\Project_II.Debug.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\bin\Debug\Project_II.exe.config
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.exe
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.pdb
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\bin\Debug\Project_II.exe.config
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.exe
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.pdb
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\bin\Debug\Project_II.exe
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\bin\Debug\Project_II.pdb
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.home.resources
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.login.resources
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.03 - updated\Project_II\obj\Debug\Project_II.FormAddTask.resources
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.04\Project_II\bin\Debug\Project_II.exe.config
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.04\Project_II\obj\Debug\Project_II.exe
+E:\A.facultate\SemVI\Industrial Informatics\Project\Industrial Informatics Project\teste\Ver 1.04\Project_II\obj\Debug\Project_II.pdb
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.exe.config
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.exe
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.pdb
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.exe
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.pdb
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\MySql.Data.dll
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.FormAddTask.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.home.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.login.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+H:\Dropbox\Industrial Informatics Project\teste\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.exe.config
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\bin\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.FormAddTask.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.home.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.login.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.04 - updated\Ver 1.04\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\bin\Debug\Project_II.exe.config
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\bin\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\bin\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.FormAddTask.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.home.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.login.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.05\Ver 1.05\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\bin\Debug\Project_II.exe.config
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\bin\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\bin\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.FormAddTask.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.home.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.login.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.06\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\bin\Debug\Project_II.exe.config
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\bin\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\bin\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.FormAddTask.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.home.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.login.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+H:\work\Ver 1.07\Project_II\bin\Debug\Project_II.exe.config
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.exe
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.pdb
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.FormAddTask.resources
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.Home.resources
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.Login.resources
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+H:\work\Ver 1.07\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+H:\work\Ver 1.07\Project_II\bin\Debug\Project_II.exe
+H:\work\Ver 1.07\Project_II\bin\Debug\Project_II.pdb
+H:\work\Ver 1.07\Project_II\bin\Debug\MySql.Data.dll
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\bin\Debug\Project_II.exe.config
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\bin\Debug\Project_II.exe
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\bin\Debug\Project_II.pdb
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.FormAddTask.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.Home.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.Login.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
