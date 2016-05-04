@@ -1,6 +1,6 @@
 ﻿namespace Project_II
 {
-    partial class FormAddTask
+    partial class FormUpdateTask
     {
         /// <summary>
         /// Required designer variable.
@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAddTask));
             this.datePicker = new System.Windows.Forms.DateTimePicker();
             this.checkMon = new System.Windows.Forms.CheckBox();
             this.checkTue = new System.Windows.Forms.CheckBox();
@@ -41,14 +39,13 @@
             this.labelLocation = new System.Windows.Forms.TextBox();
             this.cmbBoxPriority = new System.Windows.Forms.ComboBox();
             this.labelIsYourTaskRecurrent = new System.Windows.Forms.Label();
-            this.btnAddTask = new System.Windows.Forms.Button();
             this.comboBoxChooseCategory = new System.Windows.Forms.ComboBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.labelAddNewTask = new System.Windows.Forms.Label();
             this.textBoxTaskTitle = new System.Windows.Forms.TextBox();
             this.timePicker = new System.Windows.Forms.DateTimePicker();
             this.labelChooseCategory = new System.Windows.Forms.Label();
-            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // datePicker
@@ -168,7 +165,6 @@
             this.cmbBoxPriority.Name = "cmbBoxPriority";
             this.cmbBoxPriority.Size = new System.Drawing.Size(70, 21);
             this.cmbBoxPriority.TabIndex = 17;
-            this.cmbBoxPriority.Text = "Priority";
             this.cmbBoxPriority.SelectedIndexChanged += new System.EventHandler(this.cmbBoxPriority_SelectedIndexChanged);
             // 
             // labelIsYourTaskRecurrent
@@ -182,31 +178,16 @@
             this.labelIsYourTaskRecurrent.TabIndex = 18;
             this.labelIsYourTaskRecurrent.Text = "Is your task recurrent ? ";
             // 
-            // btnAddTask
-            // 
-            this.btnAddTask.AutoEllipsis = true;
-            this.btnAddTask.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAddTask.BackgroundImage")));
-            this.btnAddTask.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnAddTask.FlatAppearance.BorderSize = 0;
-            this.btnAddTask.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddTask.ForeColor = System.Drawing.Color.White;
-            this.btnAddTask.Location = new System.Drawing.Point(373, 355);
-            this.btnAddTask.Name = "btnAddTask";
-            this.btnAddTask.Size = new System.Drawing.Size(25, 25);
-            this.btnAddTask.TabIndex = 19;
-            this.btnAddTask.UseVisualStyleBackColor = true;
-            this.btnAddTask.Click += new System.EventHandler(this.btnAddTask_Click);
-            // 
             // comboBoxChooseCategory
             // 
-            this.comboBoxChooseCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxChooseCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
+            this.comboBoxChooseCategory.Enabled = false;
             this.comboBoxChooseCategory.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.comboBoxChooseCategory.FormattingEnabled = true;
             this.comboBoxChooseCategory.Location = new System.Drawing.Point(240, 78);
             this.comboBoxChooseCategory.Name = "comboBoxChooseCategory";
             this.comboBoxChooseCategory.Size = new System.Drawing.Size(167, 21);
             this.comboBoxChooseCategory.TabIndex = 22;
-            this.comboBoxChooseCategory.SelectedIndexChanged += new System.EventHandler(this.comboBoxChooseCategory_SelectedIndexChanged);
             // 
             // btnCancel
             // 
@@ -229,9 +210,9 @@
             this.labelAddNewTask.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelAddNewTask.Location = new System.Drawing.Point(24, 25);
             this.labelAddNewTask.Name = "labelAddNewTask";
-            this.labelAddNewTask.Size = new System.Drawing.Size(115, 21);
+            this.labelAddNewTask.Size = new System.Drawing.Size(104, 21);
             this.labelAddNewTask.TabIndex = 24;
-            this.labelAddNewTask.Text = "Add a new task";
+            this.labelAddNewTask.Text = "Update a task";
             // 
             // textBoxTaskTitle
             // 
@@ -264,23 +245,38 @@
             this.labelChooseCategory.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelChooseCategory.Location = new System.Drawing.Point(25, 81);
             this.labelChooseCategory.Name = "labelChooseCategory";
-            this.labelChooseCategory.Size = new System.Drawing.Size(204, 13);
+            this.labelChooseCategory.Size = new System.Drawing.Size(168, 13);
             this.labelChooseCategory.TabIndex = 30;
-            this.labelChooseCategory.Text = "Choose the category for your task";
+            this.labelChooseCategory.Text = "The category of your task is";
             // 
-            // FormAddTask
+            // btnUpdate
+            // 
+            this.btnUpdate.BackColor = System.Drawing.Color.White;
+            this.btnUpdate.FlatAppearance.BorderSize = 0;
+            this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpdate.Font = new System.Drawing.Font("Verdana", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(137)))), ((int)(((byte)(196)))));
+            this.btnUpdate.Location = new System.Drawing.Point(329, 355);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(78, 29);
+            this.btnUpdate.TabIndex = 32;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // FormUpdateTask
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(442, 412);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.labelChooseCategory);
             this.Controls.Add(this.timePicker);
             this.Controls.Add(this.textBoxTaskTitle);
             this.Controls.Add(this.labelAddNewTask);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.comboBoxChooseCategory);
-            this.Controls.Add(this.btnAddTask);
             this.Controls.Add(this.labelIsYourTaskRecurrent);
             this.Controls.Add(this.cmbBoxPriority);
             this.Controls.Add(this.labelLocation);
@@ -294,10 +290,15 @@
             this.Controls.Add(this.datePicker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(10, 10);
-            this.Name = "FormAddTask";
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(442, 412);
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(442, 412);
+            this.Name = "FormUpdateTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add a new task";
             this.Load += new System.EventHandler(this.FormAddTask_Load);
+            this.DoubleClick += new System.EventHandler(this.FormAddTask_DoubleClick);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,14 +318,13 @@
         private System.Windows.Forms.TextBox labelLocation;
         private System.Windows.Forms.ComboBox cmbBoxPriority;
         private System.Windows.Forms.Label labelIsYourTaskRecurrent;
-        private System.Windows.Forms.Button btnAddTask;
         private System.Windows.Forms.ComboBox comboBoxChooseCategory;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Label labelAddNewTask;
         private System.Windows.Forms.TextBox textBoxTaskTitle;
         private System.Windows.Forms.DateTimePicker timePicker;
         private System.Windows.Forms.Label labelChooseCategory;
-        private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
 

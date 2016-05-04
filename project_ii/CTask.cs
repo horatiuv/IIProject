@@ -34,7 +34,6 @@ namespace Project_II
         public static void populateTaskList(System.Windows.Forms.ListView f_todayTasks, System.Windows.Forms.Label f_today)
         {
 
-
             f_todayTasks.Items.Clear();
 
             //reset the label with Today
@@ -48,7 +47,7 @@ namespace Project_II
             {
                 //create command
                 MySqlCommand cmd = con.connection.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND done=0";
+                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND done=0 ORDER BY task_priority";
                 cmd.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
 
                 //Create a data reader and execute the command
@@ -57,15 +56,15 @@ namespace Project_II
                 {
                     while (dataReader.Read())
                     {
-                        //verify if the task is from today
-                        if (DateTime.Parse(dataReader["deadline"].ToString()).Date == DateTime.Now.Date)
+                        string m_recurrentDays = dataReader["rec_days"].ToString();
+                        //verify if the task is from today 
+                        ListViewItem item = new ListViewItem();
+                        if (DateTime.Parse(dataReader["deadline"].ToString()).Date == DateTime.Now.Date && m_recurrentDays.Equals("0000000"))
                         {
                             string descriptionDB = dataReader["task_name"].ToString();
                             string deadlineDB = dataReader["deadline"].ToString();
                             f_todayTasks.View = View.Details; // Enables Details view so you can see columns
-
-                            ListViewItem item = new ListViewItem();
-
+                            //ListViewItem item = new ListViewItem();
                             item.SubItems.Add(descriptionDB);
                             item.SubItems.Add("location unknown");
                             item.SubItems.Add(deadlineDB);
@@ -74,13 +73,38 @@ namespace Project_II
 
                             f_todayTasks.Items.Add(item);
                         }
+                        else
+                        {
+                            //if the task is not from today, verify if it is recurrent for the current day of the week 
+                            //&&verify if it's deadline didn't pass
+                            if (DateTime.Parse(dataReader["deadline"].ToString()).Date >= DateTime.Now.Date && checkRecurrentDay(m_recurrentDays))
+                            {
+                                string descriptionDB = dataReader["task_name"].ToString();
+                                string deadlineDB = dataReader["deadline"].ToString();
+                                f_todayTasks.View = View.Details; // Enables Details view so you can see columns
+
+                                //ListViewItem item = new ListViewItem();
+
+                                item.SubItems.Add(descriptionDB);
+                                item.SubItems.Add("location unknown");
+                                item.SubItems.Add(deadlineDB);
+                                item.SubItems.Add("undone");
+                                item.ImageIndex = 0;
+
+                                f_todayTasks.Items.Add(item);
+                            }
+                        }
                     }
                 }
             }
             f_todayTasks.AutoResizeColumns(ColumnHeaderAutoResizeStyle.ColumnContent);
             f_todayTasks.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);
 
+
+
             con.CloseConnection();
+
+
         }
 
         public static void populateNextTasksList(System.Windows.Forms.ListView f_nextTasks)
@@ -95,7 +119,7 @@ namespace Project_II
             {
                 //create command
                 MySqlCommand cmd = con.connection.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND done=0";
+                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND done=0 ORDER BY task_priority";
                 cmd.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
 
                 //Create a data reader and execute the command
@@ -133,7 +157,6 @@ namespace Project_II
 
         public static int countTodayTasks()
         {
-
             int taskCounter = 0;
 
             //try to open the database
@@ -156,12 +179,17 @@ namespace Project_II
                         //verify if the task is from today
                         if (DateTime.Parse(dataReader["deadline"].ToString()).Date == DateTime.Now.Date)
                         {
-                            taskCounter++;
+                            taskCounter += 1;
+                        }
+                        //verify if the deadline of the recurrent task is greater than the current day
+                        //and verify if the task is recurent for the current day
+                        string recDays = dataReader["rec_days"].ToString();
+                        if (DateTime.Parse(dataReader["deadline"].ToString()).Date >= DateTime.Now.Date && checkRecurrentDay(recDays) == true)
+                        {
+                            taskCounter += 1;
                         }
                     }
                 }
-
-
             }
             con.CloseConnection();
 
@@ -173,7 +201,7 @@ namespace Project_II
         {
 
             string taskName = f_listView.SelectedItems[0].SubItems[1].Text;
-            bool taskDoneDB=false;;
+            bool taskDoneDB = false; ;
 
             //try to open the database
             DBConnect con; //connection to the db
@@ -197,7 +225,7 @@ namespace Project_II
             con.CloseConnection();
 
             DialogResult resultTasksDelete;
-            if(taskDoneDB==false)
+            if (taskDoneDB == false)
             {
                 resultTasksDelete = MessageBox.Show("Task is done? ", "Confirmation", MessageBoxButtons.YesNo);
             }
@@ -205,7 +233,7 @@ namespace Project_II
             {
                 resultTasksDelete = MessageBox.Show("Do you want to undo task? ", "Confirmation", MessageBoxButtons.YesNo);
             }
-           
+
             if (resultTasksDelete == DialogResult.Yes)
             {
 
@@ -233,8 +261,61 @@ namespace Project_II
             populateNextTasksList(Login.h.listViewNext);
             CCategory.populateCategoryList(Login.h.categories);
 
+        }
 
-
+        ///Verify if there exists any recurrent day
+        public static bool checkRecurrentDay(String recDays)
+        {
+            if (recDays[0] == '1' && DateTime.Now.DayOfWeek.ToString() == "Monday")
+            {
+                return true;
+            }
+            else
+            {
+                if (recDays[1] == '1' && DateTime.Now.DayOfWeek.ToString() == "Tuesday")
+                {
+                    return true;
+                }
+                else
+                {
+                    if (recDays[2] == '1' && DateTime.Now.DayOfWeek.ToString() == "Wednesday")
+                    {
+                        return true;
+                    }
+                    else
+                    {
+                        if (recDays[3] == '1' && DateTime.Now.DayOfWeek.ToString() == "Thursday")
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            if (recDays[1] == '1' && DateTime.Now.DayOfWeek.ToString() == "Friday")
+                            {
+                                return true;
+                            }
+                            else
+                            {
+                                if (recDays[1] == '1' && DateTime.Now.DayOfWeek.ToString() == "Saturday")
+                                {
+                                    return true;
+                                }
+                                else
+                                {
+                                    if (recDays[1] == '1' && DateTime.Now.DayOfWeek.ToString() == "Sunday")
+                                    {
+                                        return true;
+                                    }
+                                    else
+                                    {
+                                        return false;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
     }

@@ -23,18 +23,12 @@ namespace Project_II
             con = new DBConnect("localhost", "plutodb", "root", "");
             displayGreeting();
 
-            //today button appearance
-            btnToday.FlatAppearance.BorderColor = Color.DarkGray;
-            btnToday.FlatAppearance.BorderSize = 1;
-            b_notes.FlatAppearance.BorderColor = Color.DarkGray;
-            b_notes.FlatAppearance.BorderSize = 1;
-           
             //populate tasks list
             listViewToday.Columns.Add("");
-            listViewToday.Columns.Add("Task description");
-            listViewToday.Columns.Add("Location");
-            listViewToday.Columns.Add("Date/Hour");
-            listViewToday.Columns.Add("Status");
+            listViewToday.Columns.Add("task description");
+            listViewToday.Columns.Add("location");
+            listViewToday.Columns.Add("date/hour");
+            listViewToday.Columns.Add("status");
             CTask.populateTaskList(listViewToday, today);
 
             //populate next list
@@ -53,20 +47,31 @@ namespace Project_II
             categories.MouseDown += new MouseEventHandler(categories_MouseDown);
             CCategory.populateCategoryList(categories);
 
-            //change the task color based on the task priority
-           /* foreach (ListViewItem lvw in listViewToday.Items)
-            {
-                if (Convert.ToInt32(lvw.SubItems[2].Text) > 2)
-                {
-                    lvw.BackColor = Color.Red;
-                }
-                else
-                {
-                    lvw.BackColor = Color.LightBlue;
-                }
-            }*/
+            //create right and left click for tasks
+            listViewToday.MouseDown += new MouseEventHandler(listViewToday_MouseDown);
+            //listViewToday.MouseDown += new MouseEventHandler(listViewToday_Click);
 
-        }  
+            ///------------------------------------------------------------------------------
+            ///Populate the bottom panel from home
+            string currentDate = DateTime.Now.DayOfWeek.ToString();
+            if (con.OpenConnection() == true)
+            {
+                int indexQuotes=1;
+                indexQuotes =  DateTime.Now.Day%10+1;
+
+                MySqlCommand cmd = con.connection.CreateCommand();
+                cmd.CommandText = "SELECT * FROM quotes WHERE id_quotes=?index_Quotes";
+                cmd.Parameters.AddWithValue("?index_Quotes", indexQuotes);
+                MySqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    labelQuote.Text = "\"" + reader["quote"].ToString() + "\"";
+                    labelQuoteAuthor.Text = reader["author"].ToString();
+                }
+            }
+            ///------------------------------------------------------------------------------
+
+        }
 
         private void displayGreeting()
         {
@@ -101,11 +106,6 @@ namespace Project_II
             linkLabel_user.Location = new Point(lB_greet.Size.Width, 30);
         }
 
-        private void btnAddaTaskHomeForm_Click(object sender, EventArgs e)
-        {
-            FormAddTask h = new FormAddTask(Login.user_class.getUserId());
-            h.Show();
-        }
 
         private void btnToday_Click(object sender, EventArgs e)
         {
@@ -156,14 +156,15 @@ namespace Project_II
             }
         }
 
-        public void listViewToday_Click(object sender, EventArgs e)
-        {
-            if (Login.h.listViewToday.SelectedItems.Count> 0)
-            {
-                CTask.doneTask(Login.h.listViewToday);
-            }
-        }
-
+        /*
+                public void listViewToday_Click(object sender, EventArgs e)
+                {
+                    if (Login.h.listViewToday.SelectedItems.Count > 0)
+                    {
+                        CTask.doneTask(Login.h.listViewToday);
+                    }
+                }
+        */
 
         public void listViewNext_Click(object sender, EventArgs e)
         {
@@ -171,7 +172,7 @@ namespace Project_II
             {
                 CTask.doneTask(Login.h.listViewNext);
             }
-                
+
         }
 
         private void categories_MouseDown(object sender, MouseEventArgs e)
@@ -201,6 +202,10 @@ namespace Project_II
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            DeleteCategoryForm f = new DeleteCategoryForm();
+            f.Show();
+
+ /*
             DBConnect con; //connection to the db
             con = new DBConnect("localhost", "plutodb", "root", "");
             //try to open the connection to db
@@ -226,9 +231,20 @@ namespace Project_II
                         cmdDeleteTasks.CommandText = "DELETE FROM tasks WHERE categories_id_category = @id_cat";
                         cmdDeleteTasks.Parameters.AddWithValue("@id_cat", Home.id_category);
                         cmdDeleteTasks.ExecuteNonQuery();
+
+                        con.CloseConnection();
+                        con.OpenConnection();
+
+                        //create command to delete category
+                        MySqlCommand cmd = con.connection.CreateCommand();
+                        cmd.CommandText = "DELETE FROM categories WHERE id_category = @id_cat";
+                        cmd.Parameters.AddWithValue("@id_cat", Home.id_category);
+
+                        cmd.ExecuteNonQuery();
                     }
                 }
-
+ */
+/*
                 con.CloseConnection();
                 con.OpenConnection();
 
@@ -238,7 +254,8 @@ namespace Project_II
                 cmd.Parameters.AddWithValue("@id_cat", Home.id_category);
 
                 cmd.ExecuteNonQuery();
-            }
+ */
+            
 
             CCategory.populateCategoryList(Login.h.categories);
             CTask.populateTaskList(Login.h.listViewToday, Login.h.today);
@@ -375,6 +392,139 @@ namespace Project_II
             //p_notes.Visible = true;
         }
 
-        
+        ///------------------------------------------------------------------------
+        ///Button for Add a new task
+        private void btnAddTaskHomeForm_Click(object sender, EventArgs e)
+        {
+            FormAddTask formAddTask = new FormAddTask(Login.user_class.getUserId());
+            formAddTask.Show();
+        }
+        ///------------------------------------------------------------------------
+
+
+        ///------------------------------------------------------------------------
+        ///Update and Delete for tasks
+        private void listViewToday_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {             
+                if (Login.h.listViewToday.SelectedItems.Count > 0)
+                {
+                    CTask.doneTask(Login.h.listViewToday);
+                    Login.h.listViewToday.SelectedItems.Clear();
+                }
+            }
+            if (e.Button == MouseButtons.Right)
+            {
+                
+                if (Login.h.listViewToday.SelectedItems.Count > 0)
+                {                  
+                    contextMenuStripListViewToday.Show(Cursor.Position);
+                    Login.h.listViewToday.SelectedItems.Clear();
+                    //MessageBox.Show("YEEEEY");                   
+                }
+            }
+        }
+
+        //Update ContextMenuStrip for tasks - ListViewToday
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Update Task");
+            int user_id = Login.user_class.getUserId();
+            int task_id ;
+
+            string taskName = listViewToday.SelectedItems[0].SubItems[1].Text;
+            //bool taskDoneDB = false; ;
+            int taskIDUpdate = 0;
+
+            //try to open the database
+            DBConnect con; //connection to the db
+            con = new DBConnect("localhost", "plutodb", "root", "");
+            con.OpenConnection();
+
+            //create command
+            MySqlCommand cmdDone = con.connection.CreateCommand();
+            cmdDone.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND task_name = ?task_nm LIMIT 1";
+            cmdDone.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
+            cmdDone.Parameters.AddWithValue("?task_nm", taskName);
+            MySqlDataReader dataReader = cmdDone.ExecuteReader();
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    //verify if the task is done
+                    //taskDoneDB = Convert.ToBoolean(dataReader["done"]);
+                    taskIDUpdate = Convert.ToInt16(dataReader["id_tasks"]);
+                }
+            }
+            con.CloseConnection();
+
+            FormUpdateTask f = new FormUpdateTask(user_id, taskIDUpdate);
+            f.Show();
+        }
+
+        //Delete ContextMenuStrip for tasks - ListViewToday
+        private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Delete Task");
+
+            string taskName = listViewToday.SelectedItems[0].SubItems[1].Text;
+            //bool taskDoneDB = false; ;
+            int taskIDDelete = 0;
+
+            //try to open the database
+            DBConnect con; //connection to the db
+            con = new DBConnect("localhost", "plutodb", "root", "");
+            con.OpenConnection();
+
+            //create command
+            MySqlCommand cmdDone = con.connection.CreateCommand();
+            cmdDone.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND task_name = ?task_nm LIMIT 1";
+            cmdDone.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
+            cmdDone.Parameters.AddWithValue("?task_nm", taskName);
+            MySqlDataReader dataReader = cmdDone.ExecuteReader();
+            if (dataReader.HasRows)
+            {
+                while (dataReader.Read())
+                {
+                    //verify if the task is done
+                    //taskDoneDB = Convert.ToBoolean(dataReader["done"]);
+                    taskIDDelete = Convert.ToInt16(dataReader["id_tasks"]);
+                }
+            }
+            con.CloseConnection();
+
+            FormDeleteTask formdelete = new FormDeleteTask(taskIDDelete);
+            formdelete.Show();
+            /*
+            if (con.OpenConnection() == true)
+            {
+                string q = "DELETE from tasks WHERE id_tasks = " + taskIDDelete;
+                MySqlCommand cmd = new MySqlCommand(q, con.connection);
+                try
+                {
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Your task have been deleted");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally { }
+
+                //close connection
+                con.CloseConnection();
+            }
+            else
+            {
+                MessageBox.Show("Database can't be opened");
+            }
+            */
+            //update task lists
+            CTask.populateTaskList(Login.h.listViewToday, Login.h.today);
+            CTask.populateNextTasksList(Login.h.listViewNext);
+            CCategory.populateCategoryList(Login.h.categories);
+        }
+        ///------------------------------------------------------------------------
     }
 }
