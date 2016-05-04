@@ -10,7 +10,7 @@ namespace Project_II
     public partial class Login : Form
     {
         private DBConnect con; //connection to the db
-        public static Home h;
+        public static Home h; 
         public static CUser user_class; //object to store info about current user
 
         public Login()

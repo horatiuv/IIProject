@@ -23,7 +23,6 @@ namespace Project_II
             m_usersIdUsers = f_usersIdUsers;
         }
 
-
         public static void populateCategoryList(System.Windows.Forms.ListBox f_categories)
         {
             //empty the category list
@@ -96,7 +95,7 @@ namespace Project_II
             {
                 //create command
                 MySqlCommand cmd = con.connection.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND categories_id_category =?category_id";
+                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND categories_id_category =?category_id ORDER BY deadline";
                 cmd.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
                 cmd.Parameters.AddWithValue("?category_id", f_categoryId);
 
