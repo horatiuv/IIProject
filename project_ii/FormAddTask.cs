@@ -34,6 +34,7 @@ namespace Project_II
             InitializeComponent();
             con = new DBConnect("localhost", "plutodb", "root", "");
             this.userID = user_ID;
+            ControlBox = false;
         }
              
         //---------------------------------------------------------------

@@ -23,12 +23,18 @@ namespace Project_II
             con = new DBConnect("localhost", "plutodb", "root", "");
             displayGreeting();
 
+            //today button appearance
+            btnToday.FlatAppearance.BorderColor = Color.DarkGray;
+            btnToday.FlatAppearance.BorderSize = 1;
+            b_notes.FlatAppearance.BorderColor = Color.DarkGray;
+            b_notes.FlatAppearance.BorderSize = 1;
+           
             //populate tasks list
             listViewToday.Columns.Add("");
-            listViewToday.Columns.Add("task description");
-            listViewToday.Columns.Add("location");
-            listViewToday.Columns.Add("date/hour");
-            listViewToday.Columns.Add("status");
+            listViewToday.Columns.Add("Task description");
+            listViewToday.Columns.Add("Location");
+            listViewToday.Columns.Add("Date/Hour");
+            listViewToday.Columns.Add("Status");
             CTask.populateTaskList(listViewToday, today);
 
             //populate next list
@@ -47,7 +53,20 @@ namespace Project_II
             categories.MouseDown += new MouseEventHandler(categories_MouseDown);
             CCategory.populateCategoryList(categories);
 
-        }
+            //change the task color based on the task priority
+           /* foreach (ListViewItem lvw in listViewToday.Items)
+            {
+                if (Convert.ToInt32(lvw.SubItems[2].Text) > 2)
+                {
+                    lvw.BackColor = Color.Red;
+                }
+                else
+                {
+                    lvw.BackColor = Color.LightBlue;
+                }
+            }*/
+
+        }  
 
         private void displayGreeting()
         {
