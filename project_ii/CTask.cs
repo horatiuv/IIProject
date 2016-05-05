@@ -31,6 +31,11 @@ namespace Project_II
             m_done = f_done;
         }
 
+        public int getTaskId()
+        {
+            return m_idTask;
+        }
+
         public static void populateTaskList(System.Windows.Forms.ListView f_todayTasks, System.Windows.Forms.Label f_today)
         {
 
@@ -63,13 +68,16 @@ namespace Project_II
                         {
                             string descriptionDB = dataReader["task_name"].ToString();
                             string deadlineDB = dataReader["deadline"].ToString();
+                            string locationDB = dataReader["location"].ToString();
+                            string idDB = dataReader["id_tasks"].ToString();
                             f_todayTasks.View = View.Details; // Enables Details view so you can see columns
                             //ListViewItem item = new ListViewItem();
                             item.SubItems.Add(descriptionDB);
-                            item.SubItems.Add("location unknown");
+                            item.SubItems.Add(locationDB);
                             item.SubItems.Add(deadlineDB);
                             item.SubItems.Add("undone");
                             item.ImageIndex = 0;
+                            item.SubItems.Add(idDB);
 
                             f_todayTasks.Items.Add(item);
                         }
@@ -81,15 +89,18 @@ namespace Project_II
                             {
                                 string descriptionDB = dataReader["task_name"].ToString();
                                 string deadlineDB = dataReader["deadline"].ToString();
+                                string locationDB = dataReader["location"].ToString();
+                                string idDB = dataReader["id_tasks"].ToString();
                                 f_todayTasks.View = View.Details; // Enables Details view so you can see columns
 
                                 //ListViewItem item = new ListViewItem();
 
                                 item.SubItems.Add(descriptionDB);
-                                item.SubItems.Add("location unknown");
+                                item.SubItems.Add(locationDB);
                                 item.SubItems.Add(deadlineDB);
                                 item.SubItems.Add("undone");
                                 item.ImageIndex = 0;
+                                item.SubItems.Add(idDB);
 
                                 f_todayTasks.Items.Add(item);
                             }
@@ -167,23 +178,24 @@ namespace Project_II
             {
                 //create command
                 MySqlCommand cmd = con.connection.CreateCommand();
-                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND done=0";
+                int today_date = Int32.Parse(DateTime.Today.ToString("dd"));
+                cmd.CommandText = "SELECT * FROM tasks WHERE users_id_user = ?id_user AND DAY(deadline) = ?today_date AND done=0";
                 cmd.Parameters.AddWithValue("?id_user", Login.user_class.getUserId().ToString());
+                cmd.Parameters.AddWithValue("?today_date", today_date);
 
                 //Create a data reader and execute the command
                 MySqlDataReader dataReader = cmd.ExecuteReader();
+                string recDays = "0000000";
                 if (dataReader.HasRows)
                 {
+                    
                     while (dataReader.Read())
                     {
                         //verify if the task is from today
-                        if (DateTime.Parse(dataReader["deadline"].ToString()).Date == DateTime.Now.Date)
-                        {
-                            taskCounter += 1;
-                        }
-                        //verify if the deadline of the recurrent task is greater than the current day
-                        //and verify if the task is recurent for the current day
-                        string recDays = dataReader["rec_days"].ToString();
+                        if (DateTime.Parse(dataReader["deadline"].ToString()).Date == DateTime.Now.Date && recDays.Equals("0000000")) 
+                            //verify if the deadline of the recurrent task is greater than the current day
+                            //and verify if the task is recurent for the current day
+                             recDays = dataReader["rec_days"].ToString();
                         if (DateTime.Parse(dataReader["deadline"].ToString()).Date >= DateTime.Now.Date && checkRecurrentDay(recDays) == true)
                         {
                             taskCounter += 1;

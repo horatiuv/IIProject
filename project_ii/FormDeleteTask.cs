@@ -21,6 +21,7 @@ namespace Project_II
             InitializeComponent();
             con = new DBConnect("localhost", "plutodb", "root", "");
             this.taskID = id_task;
+            ControlBox = false;
         }
 
         private void btnDeleteNO_Click(object sender, EventArgs e)
@@ -60,6 +61,8 @@ namespace Project_II
             CTask.populateTaskList(Login.h.listViewToday, Login.h.today);
             CTask.populateNextTasksList(Login.h.listViewNext);
             CCategory.populateCategoryList(Login.h.categories);
+            int todayTasks = CTask.countTodayTasks();
+            Login.h.btnToday.Text = "Today(" + todayTasks + ")";
         }
 
         //---------------------------------------------------------------

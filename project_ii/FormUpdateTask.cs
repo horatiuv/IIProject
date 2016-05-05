@@ -34,6 +34,9 @@ namespace Project_II
         {
             InitializeComponent();
             con = new DBConnect("localhost", "plutodb", "root", "");
+            ControlBox = false;
+            timePicker.CustomFormat = "HH:mm";
+            timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.userID = user_ID;
             this.taskID = task_ID;
         }

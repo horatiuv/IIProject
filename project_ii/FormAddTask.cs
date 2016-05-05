@@ -20,13 +20,13 @@ namespace Project_II
         private string fTaskTitle;
         private int fTaskPriorityInt;
         private string fTaskDataTimeString;
-        private string fTaskLocation;
-        private string fRecurrentDays = "0000000";
         private int userID;
         private int fTaskIDCategory;
+        private string fRecurrentDays = "0000000";
         private int fTaskDone = 0;
         //Declare auxiliary variables that will help to construct the above variables
         private string fCategory;               
+        private string fTaskLocation;
         private string fTaskTime;
                
         public FormAddTask(int user_ID)
@@ -34,6 +34,9 @@ namespace Project_II
             InitializeComponent();
             con = new DBConnect("localhost", "plutodb", "root", "");
             this.userID = user_ID;
+            ControlBox = false;
+            timePicker.CustomFormat = "HH:mm";
+            timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
         }
              
         //---------------------------------------------------------------
@@ -81,23 +84,28 @@ namespace Project_II
             }
             //Populate cmbBoxPriorities with the priorities
             cmbBoxPriority.Text = "Priority";
-            string[] priorities = new string[3] {"1", "2", "3"};
+            string[] priorities = new string[3] { "1", "2", "3" };
             foreach (var itemCombo in priorities)
             {
                 cmbBoxPriority.Items.Add(itemCombo);
             }
+
             //Only future dates can be picked up
             //datePicker.MinDate = DateTime.Now; 
 
             //ToolTip tooltip = new ToolTip();
             //tooltip.SetToolTip.(System.Windows.Forms.cmbBoxPriority,"The highest priority is 1 and the lowest is 3.");
-           
+
+
+            //Load 
+            // textBoxTaskTitle.Text = "Task description";
+            // labelLocation.Text = "Task location";
         }
 
         //---------------------------------------------------------------
         ///Add.a.task Button
         private void btnAddTask_Click(object sender, EventArgs e)
-        {           
+        {
             //Check if all the fields are completed with the proper informations 
             bool category = false;
             bool description = false;
@@ -141,17 +149,17 @@ namespace Project_II
             }
             else
                 if (category && !(description))
-                {
-                    MessageBox.Show(" Before you add a task, choose a category for it !! ");
-                }
-                else
+            {
+                MessageBox.Show(" Before you add a task, choose a category for it !! ");
+            }
+            else
                     if (!category && description)
-                    {
-                        MessageBox.Show(" Before you add a task, choose a name for it !! ");
-                    }
+            {
+                MessageBox.Show(" Before you add a task, choose a name for it !! ");
+            }
             else
             {
-               
+
                 //MessageBox.Show(fCategory);
                 //MessageBox.Show(fTaskTitle);
                 //MessageBox.Show(fTaskDataTimeString);
@@ -163,35 +171,35 @@ namespace Project_II
                 {
                     //Create command
                     MySqlCommand cmd = con.connection.CreateCommand();
-                    
-                        cmd.CommandText = "INSERT INTO tasks (task_name, task_priority, deadline, location, rec_days, users_id_user, categories_id_category, done) VALUES (?taskName, ?taskPriority, ?taskdeadline, ?taskLocation, ?taskRecurrentDays, ?usersIdUser, ?CategoriesIdCategory, ?taskDone )";
-                        cmd.Parameters.AddWithValue("taskName", fTaskTitle);
-                        cmd.Parameters.AddWithValue("taskPriority", fTaskPriorityInt);
-                        cmd.Parameters.AddWithValue("taskdeadline", fTaskDataTimeString);
-                        cmd.Parameters.AddWithValue("taskLocation", fTaskLocation);
-                        cmd.Parameters.AddWithValue("taskRecurrentDays", fRecurrentDays);
-                        cmd.Parameters.AddWithValue("usersIdUser", userID);
-                        cmd.Parameters.AddWithValue("CategoriesIdCategory", fTaskIDCategory);
-                        cmd.Parameters.AddWithValue("taskDone", fTaskDone);
-                        try
-                        {
-                            cmd.ExecuteNonQuery();
-                            MessageBox.Show("Now, Pluto knows about your task!\nDon't forget about it! Because he wouldn't :)");
-                            CCategory.populateCategoryList(Login.h.categories);
-                            
-                            //write the number of tasks for today
-                            int todayTasks = CTask.countTodayTasks();
-                            Login.h.btnToday.Text = "Today(" + todayTasks + ")";
 
-                            //update today and next list
-                            CTask.populateTaskList(Login.h.listViewToday, Login.h.today);
-                            CTask.populateNextTasksList(Login.h.listViewNext);
-                        }
-                        catch (MySqlException ex)
-                        {
-                            MessageBox.Show(ex.ToString());
-                        }
-                    
+                    cmd.CommandText = "INSERT INTO tasks (task_name, task_priority, deadline, location, rec_days, users_id_user, categories_id_category, done) VALUES (?taskName, ?taskPriority, ?taskdeadline, ?taskLocation, ?taskRecurrentDays, ?usersIdUser, ?CategoriesIdCategory, ?taskDone )";
+                    cmd.Parameters.AddWithValue("taskName", fTaskTitle);
+                    cmd.Parameters.AddWithValue("taskPriority", fTaskPriorityInt);
+                    cmd.Parameters.AddWithValue("taskdeadline", fTaskDataTimeString);
+                    cmd.Parameters.AddWithValue("taskLocation", fTaskLocation);
+                    cmd.Parameters.AddWithValue("taskRecurrentDays", fRecurrentDays);
+                    cmd.Parameters.AddWithValue("usersIdUser", userID);
+                    cmd.Parameters.AddWithValue("CategoriesIdCategory", fTaskIDCategory);
+                    cmd.Parameters.AddWithValue("taskDone", fTaskDone);
+                    try
+                    {
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Now, Pluto knows about your task!\nDon't forget about it! Because he wouldn't :)");
+                        CCategory.populateCategoryList(Login.h.categories);
+
+                        //write the number of tasks for today
+                        int todayTasks = CTask.countTodayTasks();
+                        Login.h.btnToday.Text = "Today(" + todayTasks + ")";
+
+                        //update today and next list
+                        CTask.populateTaskList(Login.h.listViewToday, Login.h.today);
+                        CTask.populateNextTasksList(Login.h.listViewNext);
+                    }
+                    catch (MySqlException ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+
                     //close connection
                     con.CloseConnection();
                 }

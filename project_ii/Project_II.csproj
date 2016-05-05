@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CCategory.cs" />
+    <Compile Include="CNote.cs" />
     <Compile Include="CTask.cs" />
     <Compile Include="CUser.cs" />
     <Compile Include="DBConnect.cs" />
@@ -68,7 +69,7 @@
     <Compile Include="FormDeleteTask.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormDeleteTask.designer.cs">
+    <Compile Include="FormDeleteTask.Designer.cs">
       <DependentUpon>FormDeleteTask.cs</DependentUpon>
     </Compile>
     <Compile Include="FormUpdateTask.cs">
@@ -88,6 +89,12 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxClose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxClose.Designer.cs">
+      <DependentUpon>MessageBoxClose.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -114,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxClose.resx">
+      <DependentUpon>MessageBoxClose.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -146,6 +156,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\notes_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

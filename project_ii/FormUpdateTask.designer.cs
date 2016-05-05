@@ -52,11 +52,11 @@
             // 
             this.datePicker.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.datePicker.CustomFormat = "dd MM yyyy HH : mm";
-            this.datePicker.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.datePicker.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F);
             this.datePicker.Location = new System.Drawing.Point(28, 195);
             this.datePicker.Name = "datePicker";
             this.datePicker.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.datePicker.Size = new System.Drawing.Size(156, 21);
+            this.datePicker.Size = new System.Drawing.Size(165, 29);
             this.datePicker.TabIndex = 2;
             this.datePicker.ValueChanged += new System.EventHandler(this.datePicker_ValueChanged);
             // 
@@ -64,7 +64,7 @@
             // 
             this.checkMon.AutoSize = true;
             this.checkMon.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkMon.Location = new System.Drawing.Point(30, 303);
+            this.checkMon.Location = new System.Drawing.Point(30, 315);
             this.checkMon.Name = "checkMon";
             this.checkMon.Size = new System.Drawing.Size(49, 17);
             this.checkMon.TabIndex = 6;
@@ -76,7 +76,7 @@
             // 
             this.checkTue.AutoSize = true;
             this.checkTue.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkTue.Location = new System.Drawing.Point(83, 303);
+            this.checkTue.Location = new System.Drawing.Point(83, 315);
             this.checkTue.Name = "checkTue";
             this.checkTue.Size = new System.Drawing.Size(46, 17);
             this.checkTue.TabIndex = 9;
@@ -88,7 +88,7 @@
             // 
             this.checkSun.AutoSize = true;
             this.checkSun.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkSun.Location = new System.Drawing.Point(334, 303);
+            this.checkSun.Location = new System.Drawing.Point(334, 315);
             this.checkSun.Name = "checkSun";
             this.checkSun.Size = new System.Drawing.Size(48, 17);
             this.checkSun.TabIndex = 11;
@@ -100,7 +100,7 @@
             // 
             this.checkSat.AutoSize = true;
             this.checkSat.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkSat.Location = new System.Drawing.Point(286, 303);
+            this.checkSat.Location = new System.Drawing.Point(286, 315);
             this.checkSat.Name = "checkSat";
             this.checkSat.Size = new System.Drawing.Size(45, 17);
             this.checkSat.TabIndex = 12;
@@ -112,7 +112,7 @@
             // 
             this.checkFri.AutoSize = true;
             this.checkFri.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkFri.Location = new System.Drawing.Point(240, 303);
+            this.checkFri.Location = new System.Drawing.Point(240, 315);
             this.checkFri.Name = "checkFri";
             this.checkFri.Size = new System.Drawing.Size(40, 17);
             this.checkFri.TabIndex = 13;
@@ -124,7 +124,7 @@
             // 
             this.checkThu.AutoSize = true;
             this.checkThu.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkThu.Location = new System.Drawing.Point(189, 303);
+            this.checkThu.Location = new System.Drawing.Point(189, 315);
             this.checkThu.Name = "checkThu";
             this.checkThu.Size = new System.Drawing.Size(47, 17);
             this.checkThu.TabIndex = 14;
@@ -136,7 +136,7 @@
             // 
             this.checkWed.AutoSize = true;
             this.checkWed.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.checkWed.Location = new System.Drawing.Point(134, 303);
+            this.checkWed.Location = new System.Drawing.Point(134, 315);
             this.checkWed.Name = "checkWed";
             this.checkWed.Size = new System.Drawing.Size(50, 17);
             this.checkWed.TabIndex = 15;
@@ -147,10 +147,10 @@
             // labelLocation
             // 
             this.labelLocation.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.labelLocation.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelLocation.Location = new System.Drawing.Point(28, 221);
+            this.labelLocation.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F);
+            this.labelLocation.Location = new System.Drawing.Point(28, 230);
             this.labelLocation.Name = "labelLocation";
-            this.labelLocation.Size = new System.Drawing.Size(379, 21);
+            this.labelLocation.Size = new System.Drawing.Size(379, 29);
             this.labelLocation.TabIndex = 16;
             this.labelLocation.Text = "Task location";
             this.labelLocation.TextChanged += new System.EventHandler(this.labelLocation_TextChanged);
@@ -159,11 +159,11 @@
             // cmbBoxPriority
             // 
             this.cmbBoxPriority.AccessibleDescription = "";
-            this.cmbBoxPriority.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.cmbBoxPriority.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F);
             this.cmbBoxPriority.FormattingEnabled = true;
-            this.cmbBoxPriority.Location = new System.Drawing.Point(337, 247);
+            this.cmbBoxPriority.Location = new System.Drawing.Point(329, 265);
             this.cmbBoxPriority.Name = "cmbBoxPriority";
-            this.cmbBoxPriority.Size = new System.Drawing.Size(70, 21);
+            this.cmbBoxPriority.Size = new System.Drawing.Size(78, 29);
             this.cmbBoxPriority.TabIndex = 17;
             this.cmbBoxPriority.SelectedIndexChanged += new System.EventHandler(this.cmbBoxPriority_SelectedIndexChanged);
             // 
@@ -172,7 +172,7 @@
             this.labelIsYourTaskRecurrent.AutoSize = true;
             this.labelIsYourTaskRecurrent.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelIsYourTaskRecurrent.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.labelIsYourTaskRecurrent.Location = new System.Drawing.Point(25, 278);
+            this.labelIsYourTaskRecurrent.Location = new System.Drawing.Point(25, 290);
             this.labelIsYourTaskRecurrent.Name = "labelIsYourTaskRecurrent";
             this.labelIsYourTaskRecurrent.Size = new System.Drawing.Size(147, 13);
             this.labelIsYourTaskRecurrent.TabIndex = 18;
@@ -182,7 +182,7 @@
             // 
             this.comboBoxChooseCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
             this.comboBoxChooseCategory.Enabled = false;
-            this.comboBoxChooseCategory.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.comboBoxChooseCategory.Font = new System.Drawing.Font("Microsoft NeoGothic", 10F);
             this.comboBoxChooseCategory.FormattingEnabled = true;
             this.comboBoxChooseCategory.Location = new System.Drawing.Point(240, 78);
             this.comboBoxChooseCategory.Name = "comboBoxChooseCategory";
@@ -217,7 +217,7 @@
             // textBoxTaskTitle
             // 
             this.textBoxTaskTitle.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBoxTaskTitle.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxTaskTitle.Font = new System.Drawing.Font("Microsoft NeoGothic", 11F);
             this.textBoxTaskTitle.Location = new System.Drawing.Point(28, 105);
             this.textBoxTaskTitle.Multiline = true;
             this.textBoxTaskTitle.Name = "textBoxTaskTitle";
@@ -230,12 +230,12 @@
             // 
             // timePicker
             // 
-            this.timePicker.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.timePicker.Font = new System.Drawing.Font("Microsoft NeoGothic", 12F);
             this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.timePicker.Location = new System.Drawing.Point(200, 195);
             this.timePicker.Name = "timePicker";
             this.timePicker.ShowUpDown = true;
-            this.timePicker.Size = new System.Drawing.Size(80, 21);
+            this.timePicker.Size = new System.Drawing.Size(64, 29);
             this.timePicker.TabIndex = 29;
             this.timePicker.ValueChanged += new System.EventHandler(this.timePicker_ValueChanged);
             // 
@@ -288,15 +288,14 @@
             this.Controls.Add(this.checkTue);
             this.Controls.Add(this.checkMon);
             this.Controls.Add(this.datePicker);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Location = new System.Drawing.Point(10, 10);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(442, 412);
+            this.MaximumSize = new System.Drawing.Size(458, 451);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(442, 412);
+            this.MinimumSize = new System.Drawing.Size(458, 451);
             this.Name = "FormUpdateTask";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add a new task";
             this.Load += new System.EventHandler(this.FormAddTask_Load);
             this.DoubleClick += new System.EventHandler(this.FormAddTask_DoubleClick);
             this.ResumeLayout(false);
@@ -325,6 +324,10 @@
         private System.Windows.Forms.DateTimePicker timePicker;
         private System.Windows.Forms.Label labelChooseCategory;
         private System.Windows.Forms.Button btnUpdate;
+
+        public FormUpdateTask()
+        {
+        }
     }
 }
 

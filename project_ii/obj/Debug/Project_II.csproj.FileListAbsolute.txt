@@ -145,46 +145,31 @@ M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.Properties.Resources.resources
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
 M:\Facultate\An III\Sem II\Industrial Informatics\Pluto\Ver 1.07 merged\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\bin\Debug\Project_II.exe.config
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\bin\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\bin\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.FormAddTask.resources
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.Home.resources
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.Login.resources
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.Properties.Resources.resources
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
-C:\Users\Roxi\Desktop\Ver 1.08 Miha\Ver 1.08\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\bin\Debug\Project_II.exe.config
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\bin\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\bin\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.FormAddTask.resources
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.Home.resources
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.Login.resources
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.Properties.Resources.resources
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
-C:\Users\Roxi\Desktop\Ver 1.09\Project_II\obj\Debug\Project_II.FormUpdateTask.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\bin\Debug\Project_II.exe.config
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\bin\Debug\Project_II.exe
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\bin\Debug\Project_II.pdb
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.FormAddTask.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.FormUpdateTask.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.Home.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.Login.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.Properties.Resources.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.FormDeleteTask.resources
-C:\Users\Roxi\Desktop\Ver 1.10\Project_II\obj\Debug\Project_II.DeleteCategoryForm.resources
-C:\Users\Horatiu\Desktop\Ver-1.10\Ver 1.10\Project_II\bin\Debug\Project_II.exe.config
-C:\Users\Horatiu\Desktop\Ver-1.10\Ver 1.10\Project_II\obj\Debug\Project_II.exe
-C:\Users\Horatiu\Desktop\Ver-1.10\Ver 1.10\Project_II\obj\Debug\Project_II.pdb
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.exe.config
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.exe
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.pdb
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.exe
+F:\IIProject\IIProject\Project_II\bin\Debug\Project_II.pdb
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.FormAddTask.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Home.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Login.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+F:\IIProject\IIProject\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\bin\Debug\Project_II.exe.config
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.exe
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.pdb
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\bin\Debug\Project_II.exe
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\bin\Debug\Project_II.pdb
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.csprojResolveAssemblyReference.cache
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.FormAddTask.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.Home.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.Login.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.Properties.Resources.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.UpdateCategoryForm.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.csproj.GenerateResource.Cache
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.DeleteCategoryForm.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.FormDeleteTask.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.FormUpdateTask.resources
+C:\Users\Horatiu\Desktop\IIProject-Ver1.08\Project_II\obj\Debug\Project_II.MessageBoxClose.resources
